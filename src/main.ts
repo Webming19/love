@@ -7,7 +7,7 @@ import router from './router';
 import store from './store';
 
 import 'dayjs/locale/zh-cn';
-import './styles/index.scss';
+import './styles/index.less';
 
 dayjs.locale('zh-cn');
 
