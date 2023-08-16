@@ -162,7 +162,7 @@ onMounted(() => {
 
 <template>
   <div class="love">
-    <canvas ref="canvas" />
+    <canvas ref="canvas" class="absolute left-0 top-0 w-full h-full" />
   </div>
 </template>
 
@@ -170,10 +170,5 @@ onMounted(() => {
 .love {
   width: 100%;
   height: 100%;
-
-  > canvas {
-    width: 100%;
-    height: 100%;
-  }
 }
 </style>

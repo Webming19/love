@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import zhCn from 'element-plus/lib/locale/lang/zh-cn';
+import type { TranslatePair } from 'element-plus/es/locale';
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs';
 
-const locale = zhCn;
+const locale: { name: string; el: TranslatePair; } = zhCn;
 </script>
 
 <template>
