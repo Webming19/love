@@ -25,7 +25,7 @@ type Attribute = {
 
 // 初始化属性对象
 const allAttribute: Attribute = {
-  num: 50,
+  num: 50, // 数量
   startProbability: 0.1,
   sizeMin: 1,
   sizeMax: 2,
@@ -117,21 +117,6 @@ class ReadyRun {
   }
 }
 
-// 窗口尺寸调整时触发的函数
-function windowResize() {
-  w = window.innerWidth;
-  h = window.innerHeight;
-  if (canvas.value) {
-    canvas.value.width = w;
-    canvas.value.height = h;
-  }
-}
-
-// 窗口尺寸调整时触发的事件监听
-window.onresize = () => {
-  windowResize();
-};
-
 // 返回一个介于参数1和参数2之间的随机数
 function findRandom(numOne: number, numTwo: number): number {
   return Math.random() * (numTwo - numOne) + numOne;
@@ -156,10 +141,22 @@ function arcHeart(
   ctx.bezierCurveTo(x + 10 * z, y - 15 * z, x, y - 3 * z, x, y);
 }
 
+// 窗口尺寸调整时触发的函数
+function windowResize() {
+  w = window.innerWidth;
+  h = window.innerHeight;
+  if (canvas.value) {
+    canvas.value.width = w;
+    canvas.value.height = h;
+  }
+}
+
 // 在组件挂载后运行的函数
 onMounted(() => {
   windowResize();
   start();
+  // 窗口尺寸调整时触发的事件监听
+  window.onresize = windowResize;
 });
 </script>
 
