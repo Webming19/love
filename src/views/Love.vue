@@ -53,10 +53,7 @@ function start() {
   ctx.fillStyle = `hsl(${styleColor.value},100%,97%)`;
   ctx.fillRect(0, 0, w, h);
 
-  if (
-    allElement.value.length < allAttribute.num
-    && Math.random() < allAttribute.startProbability
-  )
+  if (allElement.value.length < allAttribute.num && Math.random() < allAttribute.startProbability)
     allElement.value.push(new ReadyRun());
 
   allElement.value.forEach((line) => {
