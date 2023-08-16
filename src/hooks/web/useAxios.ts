@@ -48,7 +48,7 @@ export function useAxios() {
   return {
     get: getFn,
     post: postFn,
-    delete: deleteFn,
+    del: deleteFn,
     put: putFn,
   };
 }
