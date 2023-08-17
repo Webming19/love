@@ -17,12 +17,11 @@ createApp(App).use(router).use(store).mount('#app');
 const env = import.meta.env;
 
 // eslint-disable-next-line no-console
-console.log(`    __                                                                     __
-   / /_  ____ _________       _   ____  _____        ____  _________  ____/ /
-  / __ \\/ __ \`/ ___/ _ \\_____| | / / / / / _ \\______/ __ \\/ ___/ __ \\/ __  / 
- / /_/ / /_/ (__  )  __/_____/ |/ / /_/ /  __/_____/ /_/ / /  / /_/ / /_/ /  
-/_.___/\\__,_/____/\\___/      |___/\\__,_/\\___/     / .___/_/   \\____/\\__,_/   
-                                                 /_/`);
+console.log(`    __              
+   / /___ _   _____ 
+  / / __ \\ | / / _ \\
+ / / /_/ / |/ /  __/
+/_/\\____/|___/\\___/`);
 // eslint-disable-next-line no-console
 console.log(
   `%cEnvironment%c${env.VITE_RUNTIME_ENV}`,

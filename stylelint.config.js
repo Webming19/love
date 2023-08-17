@@ -14,7 +14,7 @@ module.exports = {
       customSyntax: 'postcss-scss',
     },
     {
-      files: ['**/*.(less)'],
+      files: ['**/*.less'],
       customSyntax: 'postcss-less',
     },
     {
