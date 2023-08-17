@@ -10,10 +10,3 @@ const locale: { name: string; el: TranslatePair; } = zhCn;
     <router-view />
   </el-config-provider>
 </template>
-
-<style scoped lang="scss">
-// nprogress样式配置，必须使用id选择器
-#nprogress .bar {
-  background: #98e0fc !important;
-}
-</style>
