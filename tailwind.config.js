@@ -3,10 +3,7 @@ const plugin = require('tailwindcss/plugin');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  presets: [],
-  theme: {
-    extend: {},
-  },
+  theme: { extend: {} },
   plugins: [
     plugin(({ addBase }) => {
       addBase({
@@ -20,12 +17,12 @@ module.exports = {
         'body': {
           fontFamily: '"Segoe UI", "Segoe WP", Arial, sans-serif',
           fontSize: '20px',
-          color: '#000',
-          backgroundColor: '#fff',
+          color: '#000000',
+          backgroundColor: '#ffffff',
           overflowX: 'hidden',
         },
         'li': { listStyle: 'none' },
-        'a': { textDecoration: 'none', color: '#000' },
+        'a': { textDecoration: 'none', color: '#000000' },
         'a, input': { outline: 'none' },
         'em, i': { fontStyle: 'normal' },
         'b, strong, h1, h2, h3, h4, h5, h6': { fontWeight: 'normal' },
@@ -34,7 +31,4 @@ module.exports = {
       });
     }),
   ],
-  corePlugins: {
-    preflight: false, // 禁用默认样式
-  },
 };

@@ -161,14 +161,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="love">
-    <canvas ref="canvas" class="absolute left-0 top-0 w-full h-full" />
+  <div class="w-full h-full">
+    <h1 class="absolute left-1/2 -translate-x-1/2 top-[30%] z-10 text-5xl text-sky-900">
+      我们的小窝
+    </h1>
+    <h3 class="absolute left-1/2 -translate-x-1/2 top-[46%] z-10 text-2xl text-sky-900">
+      还在建设中，敬请期待...
+    </h3>
+    <canvas ref="canvas" class="absolute left-0 top-0 z-0 w-full h-full" />
   </div>
 </template>
-
-<style scoped>
-.love {
-  width: 100%;
-  height: 100%;
-}
-</style>
